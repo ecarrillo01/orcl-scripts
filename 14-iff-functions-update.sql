@@ -1,0 +1,1 @@
+update iff_functions set function_name='iffUser.get_table' where function_name='get_table';

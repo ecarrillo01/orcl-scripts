@@ -1,0 +1,1 @@
+drop trigger IFF_TGR_ROLE_USER_TABLES_AD;
