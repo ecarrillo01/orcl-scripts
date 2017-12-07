@@ -1,0 +1,1 @@
+alter table users modify lastname varchar(40);
