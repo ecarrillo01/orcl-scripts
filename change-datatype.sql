@@ -1,15 +1,3 @@
--- Role menu items role id varchar(35)
-
-SET SERVEROUTPUT ON;
-DECLARE
-  col_already_exist exception;
-  pragma EXCEPTION_INIT (col_already_exist, -01430);
-  BEGIN
- execute immediate('ALTER TABLE IFF_ROLE_MENU_ITEMS ADD ROLE_ID_TMP_COL VARCHAR(35)');
-  EXCEPTION when col_already_exist then null;
-end;
-/
-
 begin
 declare 
 is_varchar2 number:=0;
